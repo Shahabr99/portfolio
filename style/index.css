@@ -18,6 +18,8 @@ html {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    z-index: 999;
+    background-color: #fffefe;
 }
 
 .pic {
@@ -57,7 +59,11 @@ html {
     padding: 2.2rem 3rem;
     display: inline-block;
     letter-spacing: 1px;
-    transition: color 1s;
+    transition: color 0.6s;
+}
+
+.link-list:hover .header-link {
+    color: rgb(249, 119, 54);
 }
 
 
@@ -70,7 +76,7 @@ html {
 
 .control-bar {
     position: absolute;
-    width: 6rem;
+    width: 5rem;
     height: 29.5rem;
     top: 50%;
     left: 0%;
@@ -111,7 +117,7 @@ html {
 .hero h1 {
     text-align: center;
     font-size: 5.4rem;
-    text-transform: uppercase;
+    text-transform: uppercase;letter-spacing: 1px;
 }
 
 .hero p {
@@ -159,9 +165,10 @@ html {
     width: 2.5rem;
     height: 4rem;
     position: absolute;
-    top: 95%;
+    top: 90%;
     left: 50%;
     border-radius: 1.5rem;
+    transform: translateX(-50%);
 }
 
 .mouse::before {
@@ -194,4 +201,155 @@ html {
         transform: translateX(-50%);
         opacity: 0;
     }
+}
+
+
+/* About me Section */
+
+.section {
+    width: 100%;
+    margin-bottom: 2.4rem;
+}
+
+.main-container {
+    width: 120rem;
+    margin: 4.8rem auto;
+    display: flex;
+    flex-direction: column;
+    gap: 4.8rem;
+}
+
+.top-header {
+    text-align: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+}
+
+.top-header h1 {
+    font-size: 4rem;
+    text-transform: uppercase;
+}
+
+.top-header h1::after {
+    content: " ";
+    width: 4.2rem;
+    height: 0.6rem;
+    background-color: rgb(252, 96, 18);
+    position: absolute;
+    border-radius: 1.2rem;
+    top: 54%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.top-header p {
+    font-size: 2rem;
+}
+
+.second-container {
+    display: flex;
+    gap: 2.4rem;
+}
+
+.aboutme-desc{
+    display: flex;
+    flex-direction: column;
+    width: 70rem;
+    padding: 2.4rem;
+}
+
+.aboutme-desc h2 {
+    font-size: 2.8rem;
+}
+
+.aboutme-desc p {
+    font-size: 1.8rem;
+    margin-bottom: 0.6rem;
+    color: #333;
+}
+
+.contact:visited, .contact:link {
+    width: 18rem;
+    height: 5rem;
+    background-color: rgb(248, 124, 62);
+    border: 1px solid #000;
+    margin-top: 2.4rem;
+    box-shadow: 1px 1px 2px #000;
+    color: #000;
+    font-size: 1.6rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact:hover {
+    background-color: rgb(255, 99, 22);
+    color: #eee;
+    cursor: pointer;
+}
+
+.contact:active {
+    background-color: rgb(255, 99, 22);
+    color: #eee;
+    cursor: pointer;
+    box-shadow: inset 1px 1px 2px #000;
+}
+
+.skills {
+    width: 50rem;
+    display: flex;
+    flex-direction: column;
+    padding: 2.4rem;
+}
+
+.skills h2 {
+    font-size: 2.8rem;
+}
+
+.skills-container div {
+    display: inline-block;
+    background-color: #dbd6d6;
+    padding: 0.8rem 1.2rem;
+    border-radius: 0.6rem;
+    margin: 0.6rem;
+    font-size: 1.5rem;
+}
+
+
+/* Project section style */
+
+.project-container{
+    display: flex;
+    flex-direction: column;
+    gap: 7.8rem;
+    max-width: 120rem;
+    margin: 4.8rem auto;
+}
+
+.project {
+    background-image: url("/images/projectpic.jpg");
+    background-size:cover;
+    background-position: center;
+    width: 60%;
+    height: 40rem;
+    position: relative;
+}
+
+.project-img {
+    position: absolute;
+    width: 51.1rem;
+    height: 31.66rem;
+    top: 3rem;
+    left: 10.5rem;
+    z-index: 9;
+}
+
+
+.project-dec {
+    display: flex;
 }
