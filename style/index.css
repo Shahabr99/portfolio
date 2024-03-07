@@ -394,7 +394,7 @@ html {
     width: 80rem;
     height: 55rem;
     margin: 0 auto;
-    background-color: #eee;
+    background-color: #e0dcb3;
     box-shadow: 1px 1px 1px 3px #00000086;
     padding: 3.6rem;
 }
@@ -419,4 +419,5 @@ html {
 
 .input-form input {
     height: 4rem;
+    padding: 0.8rem;
 }
