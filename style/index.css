@@ -651,3 +651,78 @@ html {
         font-size: 1.6rem;
     }
 }
+
+@media screen and (max-width:450px) {
+    .nav-links {
+        position: absolute;
+        left: 9999999px;
+    }
+
+    .name {
+        width: 40%;
+    }
+
+    .name div span {
+        font-size: 1.2rem;
+    }
+
+    .pic {
+        width: 3rem;
+        height: 3rem;
+        margin: 0.1rem;
+    }
+
+    .hero h1 {
+        font-size: 3.6rem;
+    }
+
+    .hero p {
+        font-size: 1.6rem;
+    }
+
+    .btn {
+        width: 14rem;
+        height: 4rem;
+        font-size: 1.6rem;
+    }
+
+    .top-header {
+        gap: 1.2rem;
+    }
+
+    .top-header h1::after {
+        top: 32%;
+    }
+
+    .project {
+        max-width: 40rem;
+    }
+
+    .project-img {
+        width: 28.3rem;
+        height: 17.6rem;
+        top: 10.5rem;
+        left: 5.9rem;
+    }
+
+    .project-desc {
+        max-width: 43rem;
+    }
+
+    .project-desc h3 {
+        font-size:2.4rem;
+    }
+
+    .project-desc p {
+        font-size:1.8rem;
+    }
+
+    .techs h5 {
+        font-size: 2.4rem;
+    }
+
+    .calendly-inline-widget {
+        max-width: 7rem;
+        margin: 0 auto;
+    }
+}
