@@ -43,6 +43,13 @@ html {
     font-weight: 700;
 }
 
+
+.hidden-icons {
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+}
+
 .navbar div {
     text-transform: uppercase;
     font-family: "Roboto";
@@ -84,6 +91,9 @@ html {
     background-image: linear-gradient(rgba(76, 67, 67, 0.549),
     rgba(26, 22, 22, 0.523)),
     url("/images/background.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .control-bar {
@@ -651,6 +661,62 @@ html {
         font-size: 1.6rem;
     }
 }
+
+@media screen and (max-width:730px) {
+    .nav-links {
+        position: absolute;
+        top: 99%;
+        left: 82%;
+        display: none;
+        visibility: hidden;
+    }
+
+    .nav-links ul {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .link-list {
+        background-color: #eee;
+        border: 1px solid;
+    }
+
+    .menu-icon {
+        position: relative;
+        left: -10px;
+        display: block;
+        visibility: visible;
+        opacity: 1;
+    }
+
+    .open-menu {
+        cursor: pointer;
+        display: block;
+        visibility: visible;
+        opacity: 1;
+    }
+
+    .close-menu {
+        position: absolute;
+        left: -60px;
+        visibility: hidden;
+        opacity: 0;
+        cursor: pointer;
+    }
+
+    .hidden {
+        display: none;
+        visibility: hidden;
+        opacity: 0;
+    }
+
+    .active {
+        display: block;
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
 
 @media screen and (max-width:450px) {
     .nav-links {
