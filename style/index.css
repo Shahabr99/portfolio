@@ -723,12 +723,6 @@ html {
 
 
 @media screen and (max-width:450px) {
-    .nav-links {
-        position: absolute;
-        left: 9999999px;
-    }
-
-
 
     .name {
         width: 40%;
@@ -778,7 +772,7 @@ html {
     }
 
     .project-desc {
-        max-width: 43rem;
+        max-width: 40rem;
     }
 
     .project-desc h3 {
@@ -801,7 +795,7 @@ html {
     .nav-links {
         position: absolute;
         top: 99%;
-        left: 70%;
+        left: 65%;
         display: none;
         visibility: hidden;
     }
@@ -829,11 +823,13 @@ html {
         display: block;
         visibility: visible;
         opacity: 1;
+        position: absolute;
+        left: -7.5rem;
     }
 
     .close-menu {
         position: absolute;
-        left: -60px;
+        left: -7rem;
         visibility: hidden;
         opacity: 0;
         cursor: pointer;
