@@ -671,6 +671,10 @@ html {
         visibility: hidden;
     }
 
+    .name {
+        margin: 1.2rem;
+    }
+
     .nav-links ul {
         flex-direction: column;
         gap: 0;
@@ -723,6 +727,8 @@ html {
         position: absolute;
         left: 9999999px;
     }
+
+
 
     .name {
         width: 40%;
@@ -790,5 +796,59 @@ html {
     .calendly-inline-widget {
         max-width: 7rem;
         margin: 0 auto;
+    }
+
+    .nav-links {
+        position: absolute;
+        top: 99%;
+        left: 70%;
+        display: none;
+        visibility: hidden;
+    }
+
+    .nav-links ul {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .link-list {
+        background-color: #eee;
+        border: 1px solid;
+    }
+
+    .menu-icon {
+        position: relative;
+        left: -10px;
+        display: block;
+        visibility: visible;
+        opacity: 1;
+    }
+
+    .open-menu {
+        cursor: pointer;
+        display: block;
+        visibility: visible;
+        opacity: 1;
+    }
+
+    .close-menu {
+        position: absolute;
+        left: -60px;
+        visibility: hidden;
+        opacity: 0;
+        cursor: pointer;
+        padding: 0.6rem;
+    }
+
+    .hidden {
+        display: none;
+        visibility: hidden;
+        opacity: 0;
+    }
+
+    .active {
+        display: block;
+        visibility: visible;
+        opacity: 1;
     }
 }
