@@ -853,12 +853,13 @@ html {
 @media screen and (max-width: 380px) {
     .project {
         max-width: 36rem;
+        max-height: 37rem;
     }
 
     .project-img {
         width: 25.5rem;
         height: 16rem;
-        top: 11.5rem;
+        top: 10rem;
         left: 5.3rem;
     }
 
