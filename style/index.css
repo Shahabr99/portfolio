@@ -722,7 +722,7 @@ html {
 }
 
 
-@media screen and (max-width:450px) {
+@media screen and (max-width:570px) {
 
     .name {
         width: 40%;
@@ -846,5 +846,23 @@ html {
         display: block;
         visibility: visible;
         opacity: 1;
+    }
+}
+
+
+@media screen and (max-width: 380px) {
+    .project {
+        max-width: 36rem;
+    }
+
+    .project-img {
+        width: 25.5rem;
+        height: 16rem;
+        top: 11.5rem;
+        left: 5.3rem;
+    }
+
+    .project-desc {
+        max-width: 360px;
     }
 }
