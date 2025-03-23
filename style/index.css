@@ -334,6 +334,10 @@ html {
     font-size: 2.8rem;
 }
 
+.skills-box {
+    border: 1px solid;
+}
+
 .skills-container div {
     display: inline-block;
     background-color: #dbd6d6;
